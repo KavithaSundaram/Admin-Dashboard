@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo_content">
+            <div class="logo">
+                <i class="fa-solid fa-book-open text-warning px-2"></i>
+                <div class="logo_name">Educkart</div>
+            </div>
+            <i class="fa-solid fa-bars" id="btn"></i>
+        </div>
+        <ul class="nav_list">
+            <li>
+                <a href="#">
+                    <i class="fa-solid fa-house"></i>
+                    <div class="links_name">Dashboard</div>
+                </a>
+                <span class="tooltip">Dashboard</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa-solid fa-user-graduate"></i>
+                    <div class="links_name">Students</div>
+                </a>
+                <span class="tooltip">Students</span>                
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa-solid fa-users"></i>
+                    <div class="links_name">Teachers</div>
+                </a>
+                <span class="tooltip">Teachers</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa-solid fa-school"></i>
+                    <div class="links_name">Class</div>
+                </a>
+                <span class="tooltip">Class</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa-regular fa-calendar-check"></i>
+                    <div class="links_name">Attendance</div>
+                </a>      
+                <span class="tooltip">Attendance</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa-solid fa-clipboard-list"></i>
+                    <div class="links_name">Examination</div>
+                </a>
+                <span class="tooltip">Examination</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa-solid fa-indian-rupee-sign"></i>
+                    <div class="links_name">Payment</div>
+                </a>
+                <span class="tooltip">Payment</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa-solid fa-clipboard-list"></i>
+                    <div class="links_name">Expanses</div>
+                </a>
+                <span class="tooltip">Expanses</span>
+            </li>
+        </ul>
+        <div class="profile_content">
+            <div class="profile">
+                <div class="profile_details">
+                    <img src="rose.jpg" alt="">
+                    <div class="name_job">
+                        <div class="name">Kavitha S!</div>
+                        <div class="job">Developer</div>
+                    </div>
+                </div>
+                <i class="fa-solid fa-arrow-right-from-bracket" id="log_out"></i>
+            </div>
+        </div>
+    </div>
+    <div class="home_content h-200">
+        <div class="text">
+            <div class="form-group btn1">
+                <input type="search" name="search" class="input" placeholder="Search.....">
+                <button class="btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+                <span><i class="fa-solid fa-message"></i></span>
+                <span><i class="fa-solid fa-bell"></i></span>
+            <div class="pro_content">
+                <div class="file">
+                    <div class="pro_details">
+                        <img src="rose.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="navBar">
+            <h2 class="subHead p-1">
+                Dashboard
+            </h2>
+            <ul class="check">
+                <li><a href="#">Today</a></li>
+                <li><a href="#">Overall Students</a></li>
+                <li><a href="#">Task</a></li>
+                <li><a href="#">Expanses CS</a></li>
+                <li><a href="#">IAMT Status</a></li>
+                <li><a href="#">Transport</a></li>
+            </ul>
+        </div>
+        <h4 id="item">Today Process</h4>
+        <div class="container-fluid fullBox">
+            <div class="cardBox">
+                <div class="first">
+                    <div class="card">
+                        <span>  
+                            <div class="innerBox_1">
+                                <div class="cardName">Students</div>
+                                <div class="numbers">1,435</div>
+                            </div>
+                            <div class="iconBox">
+                                <i class="fa-solid fa-user-graduate"></i>             
+                            </div>
+                        </span>
+                        <span>
+                            <div class="innerBox_1">
+                                <div class="cardName">Male</div>
+                                <div class="numbers">750 +</div>
+                            </div>
+                            <div class="innerBox_1">
+                                <div class="cardName">Female</div>
+                                <div class="numbers">750+</div>
+                            </div>
+                        </span>
+                    </div>
+                    <div class="card">
+                        <span>  
+                        <div class="innerBox_1">
+                            <div class="cardName">Teachers</div>
+                            <div class="numbers">100</div>
+                        </div>
+                        <div class="iconBox">
+                            <i class="fa-solid fa-users"></i>             
+                        </div>
+                    </span>
+                    <span>
+                        <div class="innerBox_1">
+                            <div class="cardName">Male</div>
+                            <div class="numbers">45+</div>
+                        </div>
+                        <div class="innerBox_1">
+                            <div class="cardName">Female</div>
+                            <div class="numbers">55+</div>
+                        </div>
+                    </span>
+                    </div>
+                    <div class="card card_2">
+                        <div class="innerBox_2">
+                            <div class="cardName">Class/Section</div>
+                            <div class="numbers">31/29</div>
+                        </div>
+                        <div class="iconBox">
+                            <i class="fa-solid fa-home"></i>             
+                        </div>
+                    </div>
+                    <div class="card card_2">
+                        <div class="innerBox_2">
+                            <div class="cardName">RET</div>
+                            <div class="numbers">50</div>
+                        </div>
+                        <div class="iconBox">
+                            <i class="fa-solid fa-users"></i>             
+                        </div>
+                    </div>
+                    <div class="card card_2">
+                        <div class="innerBox_2">
+                            <div class="cardName">Total Fees</div>
+                            <div class="numbers">75,000</div>
+                        </div>
+                        <div class="iconBox">
+                            <i class="fa-solid fa-user-graduate"></i>             
+                        </div>
+                    </div>
+                    <div class="card card_2">
+                        <div class="innerBox_2">
+                            <div class="cardName">Total Expanses</div>
+                            <div class="numbers">15,000</div>
+                        </div>
+                        <div class="iconBox">
+                            <i class="fa-solid fa-user-graduate"></i>             
+                        </div>
+                    </div>
+                </div>
+                <div class="card calender_1">
+                    <div>
+                        <div class="calender">
+                            <div class="month">
+                                <h4>Calender</h4>
+                                <i class="fas fa-angle-left prev">
+                                </i>
+                                <div class="date">
+                                    <h4>May</h4>
+                                    <p>Fri jan 29, 2024</p>
+                                </div>
+                                <i class="fas fa-angle-right next">
+                                </i>
+                            </div>
+                            <div class="weekdays">
+                                <div>Sun</div>
+                                <div>Mon</div>
+                                <div>Tue</div>
+                                <div>Wed</div>
+                                <div>Thur</div>
+                                <div>Fri</div>
+                                <div>Sat</div>
+                            </div>
+                            <div class="days">
+                                <div class="prev-date">26</div>
+                                <div class="prev-date">27</div>
+                                <div class="prev-date">28</div>
+                                <div class="prev-date">29</div>
+                                <div class="prev-date">30</div>
+                                <div>1</div>
+                                <div>2</div>
+                                <div>3</div>
+                                <div>4</div>
+                                <div>5</div>
+                                <div>6</div>
+                                <div>7</div>
+                                <div>8</div>
+                                <div>9</div>
+                                <div>10</div>
+                                <div>11</div>
+                                <div>12</div>
+                                <div>13</div>
+                                <div>14</div>
+                                <div>15</div>
+                                <div>16</div>
+                                <div>17</div>
+                                <div>18</div>
+                                <div>19</div>
+                                <div>20</div>
+                                <div>21</div>
+                                <div>22</div>
+                                <div>23</div>
+                                <div>24</div>
+                                <div>25</div>
+                                <div>26</div>
+                                <div>27</div>
+                                <div>28</div>
+                                <div class="today">29</div>
+                                <div>30</div>
+                                <div>31</div>
+                                <div class="next-date">1</div>
+                                <div class="next-date">2</div>
+                                <div class="next-date">3</div>
+                                <div class="next-date">4</div>
+                                <div class="next-date">5</div>
+                                <div class="next-date">6</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="chart">
+                    <div class="chart-card">
+                        <h4 class="chart-title">Fees Collection</h4>
+                        <div class="fees">
+                            <div id="expan">
+                                <span>Today Online</span>
+                                <a href="#"><b>15,000</b></a>
+                            </div>
+                            <div id="allow">
+                                <span>Today Offline</span>
+                                <a href="#"><b>10,000</b></a>
+                            </div>
+                        </div>
+                        <div id="area-chart"></div>
+                    </div>
+                </div>
+                <div class="chart">
+                    <div class="chart-card">
+                        <div class="chart-title">
+                            <h4>Expanse</h4>
+                            <input class="text-warning border-warning" type="date" name="date" id="date">
+                        </div>
+                        <div class="expanse">
+                            <div id="expan">
+                                <span>Expanses</span>
+                                <a href="#"><b>15,000</b></a>
+                            </div>
+                            <div id="allow">
+                                <span>Allowance</span>
+                                <a href="#"><b>10,000</b></a>
+                            </div>
+                            <div id="trans">
+                                <span>Transport</span>
+                                <a href="#" ><b>8,000</b></a>
+                            </div>
+                        </div>
+                        <div id="bar-chart"></div>
+                    </div>
+                </div>      
+            </div>  
+            <div class="semi-box">
+                <div class="card description">
+                    <h4>Notice Board</h4>
+                    <div>
+                        <input class="bg-dark text-light" type="date" name="date" id="date">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                        </p>
+                        <p><small class="text-muted">Head Office / 5 min ago</small></p>
+                    </div>
+                    <div>
+                        <input class="bg-danger text-light" type="date" name="date" id="date">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                        </p>
+                        <p><small class="text-muted">Head Office / 5 min ago</small></p>
+                    </div>
+                    <div>
+                        <input class="bg-success text-light" type="date" name="date" id="date">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                        </p>
+                        <p><small class="text-muted">Head Office / 5 min ago</small></p>
+                    </div>
+                    <div>
+                        <input class="bg-primary text-light" type="date" name="date" id="date">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                        </p>
+                        <p><small class="text-muted">Head Office / 5 min ago</small></p>
+                    </div>
+                    <div>
+                        <input class="bg-info text-light" type="date" name="date" id="date">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                        </p>
+                        <p><small class="text-muted">Head Office / 5 min ago</small></p>
+                    </div>                           
+                </div>  
+            </div>
+        </div>
+    </div>
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.45.2/apexcharts.min.js" integrity="sha512-vIqZt7ReO939RQssENNbZ+Iu3j0CSsgk41nP3AYabLiIFajyebORlk7rKPjGddmO1FQkbuOb2EVK6rJkiHsmag==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
